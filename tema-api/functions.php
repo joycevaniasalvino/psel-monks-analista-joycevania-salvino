@@ -197,6 +197,7 @@ function minha_api_callback()
         ],
         [
             'id' => 7,
+            'imgForm' => 'link',
             'tituloForm' => 'Lorem ipsum dolor sit amet consectetur',
             'textoForm' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque',
             'textoFormDetalhe'=> '*Lorem ipsum dolor sit amet consectetur'
