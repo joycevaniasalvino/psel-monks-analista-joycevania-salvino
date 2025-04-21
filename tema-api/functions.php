@@ -9,10 +9,12 @@ add_action('rest_api_init', function () {
 
 function minha_api_callback()
 {
+    $theme_uri = get_template_directory_uri();
+
     return [
         [
             'id' => 1,
-            'imgLogo' => 'link',
+            'imgLogo' => $theme_uri . 'assets/imagens/logo.png',
             'linksHeader' => [
                 [
                     'id' => 1,
@@ -38,10 +40,8 @@ function minha_api_callback()
             'tituloPrincipal' => 'Lorem ipsum dolor sit amet consectetur',
             'textoprincipal' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra',
             'imgPrincipal' => 'link',
-            'imgScroll'=> 'link'
-        ],
-        [
-            'id' => 2,
+            'imgScroll'=> 'link',
+
             'tituloSecao2' => 'Lorem ipsum dolor sit amet consectetur',
             'textoSecao2' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo',
             'cards' => [
@@ -69,10 +69,7 @@ function minha_api_callback()
                     'tituloCard' => 'Lorem ipsum dolorLorem ipsum dolor',
                     'textCard' => 'Lorem ipsum dolor sit amet consectetur.'
                 ]
-            ]
-        ],
-        [
-            'id' => 3,
+            ],
             'tituloSecao3' => 'Lorem ipsum dolor sit amet consectetur',
             'textoSecao3' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo',
             'imagesSecao3' => [
@@ -85,18 +82,14 @@ function minha_api_callback()
                 [
                     'img3' => 'link'
                 ]
-            ]
-        ],
-        [
-            'id' => 4,
-            'tituloSecao4' => 'Lorem ipsum dolor sit amet consectetur',
-            'textSecao4' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra',
-            'imgAppleStore' => 'link',
-            'imgPlayStore' => 'link',
-        ],
-        [
-            'id' => 5,
-            'tituloSecao5' => 'Lorem ipsum dolor sit amet consectetur',
+                ],
+
+                'tituloSecao4' => 'Lorem ipsum dolor sit amet consectetur',
+                'textSecao4' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra',
+                'imgAppleStore' => 'link',
+                'imgPlayStore' => 'link',
+
+                'tituloSecao5' => 'Lorem ipsum dolor sit amet consectetur',
             'links' => [
                 [
                     'id' => 1,
@@ -173,10 +166,8 @@ function minha_api_callback()
                     'titulo' => 'Proteção solar',
                     'link' => 'link'
                 ],
-            ]
-        ],
-        [
-            'id' => 6,
+            ],
+    
             'cards' => [
                 [
                     'id' => 1,
@@ -193,17 +184,13 @@ function minha_api_callback()
                     'titulo' => 'Lorem ipsum dolor sit amet',
                     'texto' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra.'
                 ],
-            ]
-        ],
-        [
-            'id' => 7,
+            ],
+
             'imgForm' => 'link',
             'tituloForm' => 'Lorem ipsum dolor sit amet consectetur',
             'textoForm' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque',
-            'textoFormDetalhe'=> '*Lorem ipsum dolor sit amet consectetur'
-        ],
-        [   
-            'id' => 8,
+            'textoFormDetalhe'=> '*Lorem ipsum dolor sit amet consectetur',
+
             'instagram' => 'link',
             'whatsapp' => 'link',
             'x' => 'link',
@@ -214,6 +201,7 @@ function minha_api_callback()
             'link2' => 'link',
             'link3' => 'link',
             'link4' => 'link'
+
         ],
     ];
 }
