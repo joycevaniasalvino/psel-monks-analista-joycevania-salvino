@@ -28,18 +28,18 @@ function App() {
     <body className="bg-[#EAE8E4] text-black">
       {dados.map((item) => (
         <div key={item.id}>
-          <header className="bg-[#2D2D2D] text-white pl-16 flex justify-between rounded-b-2xl">
-            <div className="pt-5">
+          <header className="bg-[#2D2D2D] text-white pl-16 flex justify-between rounded-b-2xl h-[480px]">
+            <div className=" flex flex-col justify-between pt-5">
               <Header imgLogo={item.imgLogo} linksHeader={item.linksHeader}/>
               <div className="mt-10">
-                <h1>Lorem ipsum dolor sit amet consectetur</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra</p>
+                <h1 className="text-5xl font-bold">Lorem ipsum dolor sit amet consectetur</h1>
+                <p className="text-2xl font-inter mt-5">Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra</p>
               </div>
-              <div className="flex justify-center mt-16">
+              <div className="flex justify-center mb-5">
                 <img src={item.imgScroll} alt="scroll" className="h-20" />
               </div>
             </div>
-            <img className="h-72" src={item.imgPrincipal} alt="Logo Monks" />
+            <img className="h-max" src={item.imgPrincipal} alt="Logo Monks" />
           </header>
 
           <section className="">
