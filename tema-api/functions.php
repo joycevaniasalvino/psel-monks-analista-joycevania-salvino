@@ -22,7 +22,7 @@ function minha_api_callback()
     return [
         [
             'id' => 1,
-            'imgLogo' => $theme_uri . '/assets/imagens/logo.png',
+            'imgLogo' => $theme_uri . 'assets/imagens/logo.png',
             'linksHeader' => [
                 [
                     'id' => 1,
@@ -47,8 +47,8 @@ function minha_api_callback()
             ],
             'tituloPrincipal' => 'Lorem ipsum dolor sit amet consectetur',
             'textoprincipal' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra',
-            'imgPrincipal' => $theme_uri . '/assets/imagens/logoSecao.png',
-            'imgScroll' => $theme_uri . '/assets/imagens/Scroll.png',
+            'imgPrincipal' => 'link',
+            'imgScroll'=> 'link',
 
             'tituloSecao2' => 'Lorem ipsum dolor sit amet consectetur',
             'textoSecao2' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo',
@@ -80,17 +80,25 @@ function minha_api_callback()
             ],
             'tituloSecao3' => 'Lorem ipsum dolor sit amet consectetur',
             'textoSecao3' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo',
-            'img1' => $theme_uri . '/assets/imagens/imgsecao3.png',
-            'img2' => $theme_uri . '/assets/imagens/imgsecao32.png',
-            'img3' => $theme_uri . '/assets/imagens/imgsecao33.png',
+            'imagesSecao3' => [
+                [
+                    'img1' => 'link'
+                ],
+                [
+                    'img2' => 'link'
+                ],
+                [
+                    'img3' => 'link'
+                ]
+                ],
 
-            'tituloSecao4' => 'Lorem ipsum dolor sit amet consectetur',
-            'textSecao4' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra',
-            'imgAppleStore' => $theme_uri . '/assets/imagens/imgPS.png',
-            'imgPlayStore' => $theme_uri . '/assets/imagens/imgAS.png',
+                'tituloSecao4' => 'Lorem ipsum dolor sit amet consectetur',
+                'textSecao4' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra',
+                'imgAppleStore' => 'link',
+                'imgPlayStore' => 'link',
 
-            'tituloSecao5' => 'Lorem ipsum dolor sit amet consectetur',
-            'tags' => [
+                'tituloSecao5' => 'Lorem ipsum dolor sit amet consectetur',
+            'links' => [
                 [
                     'id' => 1,
                     'titulo' => 'Perfumaria',
@@ -167,7 +175,8 @@ function minha_api_callback()
                     'link' => 'link'
                 ],
             ],
-            'cards2' => [
+    
+            'cards' => [
                 [
                     'id' => 1,
                     'tituloCard' => 'Lorem ipsum dolor sit amet',
@@ -183,27 +192,23 @@ function minha_api_callback()
                     'tituloCard' => 'Lorem ipsum dolor sit amet',
                     'textCard' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra.'
                 ],
-                [
-                    'id' => 4,
-                    'tituloCard' => 'Lorem ipsum dolor sit amet',
-                    'textCard' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra.'
-                ]
             ],
-            'imgForm' => $theme_uri . '/assets/imagens/imgForm.png',
+
+            'imgForm' => 'link',
             'tituloForm' => 'Lorem ipsum dolor sit amet consectetur',
             'textoForm' => 'Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque',
-            'textoFormDetalhe' => '*Lorem ipsum dolor sit amet consectetur',
+            'textoFormDetalhe'=> '*Lorem ipsum dolor sit amet consectetur',
 
-            'instagram' => '#',
-            'whatsapp' => '#',
-            'twitter' => '#',
-            'facebook' => '#',
+            'instagram' => 'link',
+            'whatsapp' => 'link',
+            'x' => 'link',
+            'facebook' => 'link',
 
             'fraseRodape' => 'Lorem ipsum dolor sit amet',
-            'link1' => '#',
-            'link2' => '#',
-            'link3' => '#',
-            'link4' => '#'
+            'link1' => 'link',
+            'link2' => 'link',
+            'link3' => 'link',
+            'link4' => 'link'
 
         ],
     ];
