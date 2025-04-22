@@ -30,7 +30,7 @@ function App() {
         <div key={item.id}>
           <header className="bg-[#2D2D2D] text-white pl-16 flex justify-between rounded-b-2xl h-[480px]">
             <div className=" flex flex-col justify-between pt-5">
-              <Header imgLogo={item.imgLogo} linksHeader={item.linksHeader}/>
+              <Header imgLogo={item.imgLogo} linksHeader={item.linksHeader} />
               <div className="mt-10">
                 <h1 className="text-5xl font-bold">Lorem ipsum dolor sit amet consectetur</h1>
                 <p className="text-2xl font-inter mt-5">Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra</p>
@@ -42,15 +42,24 @@ function App() {
             <img className="h-max" src={item.imgPrincipal} alt="Logo Monks" />
           </header>
 
-          <section className="">
-            <h2>Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo</p>
-            <Card />
+          <section className="flex flex-col m-16">
+            <h2 className="text-4xl">{item.tituloSecao2}</h2>
+            <p className="text-2xl mt-2 mb-10">{item.textoSecao2}</p>
+            <Card cards={item.cards} />
           </section>
 
-          <section>
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo</p>
+          <section className="flex m-16 gap-x-6">
+            <div className="flex flex-col gap-y-6 justify-between">
+              <div className="ml-3">
+                <h2 className="text-5xl">{item.tituloSecao3}</h2>
+                <p className="text-xl pt-2">{item.textoSecao3}</p>
+              </div>
+              <img className="h-[525px]" src={item.img1} alt="img 1" />
+            </div>
+            <div className="flex flex-col gap-y-6">
+              <img className="h-[346.5px]" src={item.img2} alt="img 2" />
+              <img className="h-[346.5px]" src={item.img3} alt="img 3" />
+            </div>
           </section>
 
           <section className="bg-[#3C0C60] text-white">
@@ -64,7 +73,7 @@ function App() {
           </section>
 
           <section>
-            <Card />
+            {/* <Card /> */}
           </section>
 
           <section className="bg-[#2D2D2D] py-10">

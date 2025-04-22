@@ -6,19 +6,15 @@ export type LinkItem = {
     link: string;
 };
 
+export type Cards = {
+    cards: CardItem[];
+};
+
 export type CardItem = {
     id: number;
     imgCard?: string;
     tituloCard?: string;
     textCard?: string;
-    titulo?: string;
-    texto?: string;
-};
-
-export type ImagemSecao3 = {
-    img1?: string;
-    img2?: string;
-    img3?: string;
 };
 
 export type DadosApi = {
@@ -36,7 +32,9 @@ export type DadosApi = {
 
     tituloSecao3?: string;
     textoSecao3?: string;
-    imagesSecao3?: ImagemSecao3[];
+    img1?: string;
+    img2?: string;
+    img3?: string;
 
     tituloSecao4?: string;
     textSecao4?: string;
