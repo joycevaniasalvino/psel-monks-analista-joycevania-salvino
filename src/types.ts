@@ -10,6 +10,10 @@ export type Cards = {
     cards: CardItem[];
 };
 
+export type Tags = {
+    tags: LinkItem[];
+};
+
 export type CardItem = {
     id: number;
     imgCard?: string;
@@ -28,7 +32,8 @@ export type DadosApi = {
 
     tituloSecao2?: string;
     textoSecao2?: string;
-    cards?: CardItem[]; // Note: Esse nome "cards" está duplicado na resposta da sua API
+    cards?: CardItem[];
+    cards2?: CardItem[];
 
     tituloSecao3?: string;
     textoSecao3?: string;
@@ -42,7 +47,7 @@ export type DadosApi = {
     imgPlayStore?: string;
 
     tituloSecao5?: string;
-    links?: LinkItem[];
+    tags?: LinkItem[];
 
     imgForm?: string;
     tituloForm?: string;
@@ -51,7 +56,7 @@ export type DadosApi = {
 
     instagram?: string;
     whatsapp?: string;
-    x?: string;
+    twitter?: string;
     facebook?: string;
 
     fraseRodape?: string;
